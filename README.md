@@ -1,0 +1,2 @@
+# theo-portfolio-template
+This is a personal portfolio website template built using Bootstrap4, HTML5, CSS3, Font Awesome icons, Animate.css, Typed.js, OwlCarousel2, jQuery, JavaScript, Counterup and a couple of other codes. I use this personally for my github user site, Feel free to customize to your taste and re-use. 
