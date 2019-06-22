@@ -1,0 +1,572 @@
+/* Initializing Google Fonts - Montserrat & Allura */
+@font-face {
+     font-family:"Montserrat";
+     src:url("lib/fonts/montserrat-regular.eot");
+     src:url("lib/fonts/montserrat-regular.eot?#iefix") format("embedded-opentype"),
+     url("lib/fonts/montserrat-regular.woff2") format("woff2"),
+     url("lib/fonts/montserrat-regular.woff") format("woff"),
+     url("lib/fonts/montserrat-regular.ttf") format("truetype"),
+     url("lib/fonts/montserrat-regular.svg#montserrat") format("svg");
+     font-style: normal;
+     font-weight: 400;
+}
+
+@font-face {
+    font-family:"Allura";
+    src:url("lib/fonts/allura-regular.eot");
+    src:url("lib/fonts/allura-regular.eot?#iefix") format("embedded-opentype"),
+    url("lib/fonts/allura-regular.woff2") format("woff2"),
+    url("lib/fonts/allura-regular.woff") format("woff"),
+    url("lib/fonts/allura-regular.ttf") format("truetype"),
+    url("lib/fonts/allura-regular.svg#allura") format("svg");
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+body, html {
+    height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    font-family:"Montserrat";
+    color: #1B1B1B;
+    background: #FFF;
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+a {
+    color: #1B1B1B;
+    font-weight: 600;
+}
+a:hover {
+    color: #1B1B1B;
+    font-weight: 400;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+
+::selection {
+    background: #1B1B1B;
+    color: #FFF;
+}
+::-moz-selection {
+    background: #1B1B1B;
+    color: #FFF;
+}
+.btn-primary {
+    background: #1B1B1B;
+    border-color: #1B1B1B;
+}
+.btn-primary:hover {
+    background: transparent;
+    color: #1B1B1B;
+    border-color: #1B1B1B;
+}
+.btn-outline-primary {
+    background: transparent;
+    color: #1B1B1B;
+    border-color: #1B1B1B;
+}
+.btn-outline-primary:hover {
+    background: #1B1B1B;
+    border-color: #1B1B1B;
+}
+.btn-outline-light:hover {
+    color: #1B1B1B;
+    font-weight: bold;
+}
+.text-primary {
+    color: #1B1B1B!important;
+}
+
+.bg-dark {
+    background: #1B1B1B!important;
+    color: #FFF;
+}
+
+/*==== Heading ====*/
+.heading h2 {
+    font-family: "Allura";
+    font-size: 2.25rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+.heading h2::after {
+    content: '';
+    background: #1B1B1B;
+    display: block;
+    height: 3px;
+    width: 10%;
+    margin: auto;
+}
+
+
+/*==== Navigation ====*/
+.navbar {
+    color: #FFF;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.navbar a {
+    color: #FFF;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 0;
+    float: right;
+}
+a.navbar-brand h1 {
+    color: #FFF;
+    font-size: 1.8rem;
+    font-family: "Allura";
+}
+a.navbar-brand {
+    transition: all ease-in 0.5s;
+}
+a.navbar-brand:hover {
+    transform: scale(1.2);
+}
+.navbar.navbar-trans {
+    background: rgba(0, 0, 0, 0.05);
+}
+.navbar.navbar-white {
+    background: #FFF;
+    border-bottom: 1px solid #DEDEDE;
+    transition: all .5s ease-in-out;
+}
+.navbar-white a.navbar-brand h1 {
+    color: #1B1B1B;
+}
+.navbar span.fa-navicon {
+    font-size: 1.5rem;
+}
+.navbar.navbar-trans .navbar-toggler span.fa-navicon {
+    color: #FFF;
+}
+.navbar.navbar-white .navbar-toggler span.fa-navicon {
+    color: #1B1B1B;
+}
+
+.navbar.navbar-trans .nav-link {
+    color: #FFF!important;
+}
+.navbar.navbar-white .nav-link {
+    color: #1B1B1B!important;
+}
+
+.navbar .nav-link::after,
+.navbar.navbar-trans .nav-link::after,
+.navbar.navbar-white .nav-link::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0px;
+    margin-top: 2px;
+    margin-bottom: 0;
+    border-radius: 15%;
+    transition: all ease-in 0.5s;
+}
+.navbar .nav-link::after,
+.navbar-trans .nav-link::after {
+    background: #FFF;
+}
+.navbar-white .nav-link::after {
+    background: #1B1B1B;
+}
+.navbar .nav-item .nav-link.active::after,
+.navbar-trans .nav-item .nav-link.active::after,
+.navbar-white .nav-item .nav-link.active::after {
+    width: 95%;
+}
+.navbar .nav-item:hover .nav-link::after,
+.navbar-trans .nav-item:hover .nav-link::after,
+.navbar-white .nav-item:hover .nav-link::after {
+    width: 95%;
+}
+
+
+/*==== Landing section ====*/
+.intro {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url("lib/img/bg.jpg");
+    height: 450px;
+    padding-top: 10rem;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    margin-bottom: 0;
+}
+.intro .text-slider-items {
+    display: none;
+}
+.intro-caption h1, .intro-caption h4 {
+    color: #FFF;
+    text-align: left;
+    text-transform: capitalize;
+    
+}
+.intro a.btn {
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    padding: 10px 15px 10px 15px;
+    animation-delay: 2s;
+    animation-iteration-count:1.5; 
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: 1.5;
+}
+
+/*==== About ====*/
+#about {
+    padding-top: 4rem;
+}
+#about img {
+    width: 100%;
+    height: 450px;
+}
+#about .progress {
+    margin-bottom: 1.2rem;
+    height: 0.5rem;
+}
+#about .skills p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+#about .skills h6 {
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 500!important;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 0;
+} 
+.skills span {
+    font-size: 12px;
+    display: inline-block;
+    float: right;
+    margin-bottom: 0!important;
+}
+
+
+
+/*==== Service ====*/
+#service {
+    padding: 2rem 0 2rem 0; 
+}
+#service h5 {
+    text-transform: capitalize;
+}
+.service-item .fa {
+    font-size: 25px;
+    background: #1B1B1B;
+    color: #FFF;
+    text-align: center;
+    height: 60px;
+    width: 60px;
+    padding-top: 15px;
+    border: 3px dotted transparent;
+    border-radius: 50%;
+    margin: 0.8rem;
+    transition: all ease-in 0.8s;
+}
+.service-item:hover .fa {
+    background: #FFF;
+    color: #1B1B1B;
+    font-weight: 600;
+    border-color: #1B1B1B;
+    transform: rotate(720deg);
+}
+
+/*==== Work Info ====*/
+.work-info {
+    background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url("lib/img/outro-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    color: #FFF;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 2rem 0 2rem 0;
+}
+.work-info ul {
+    margin: 0;
+    padding-left: 4rem;
+    text-align: center;
+}
+.work-info ul li {
+    display: inline-block;
+    margin-right: 5rem;
+    margin-bottom: 3rem;
+}
+
+/*==== Resume ====*/
+#resume {
+    padding-top: 1.5rem;
+}
+#resume h5 {
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+#resume h6 {
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+
+/*==== Quote ====*/
+.quote-area {
+    background: #1B1B1B;
+    color: #FFF;
+    text-align: center;
+    padding: 4rem;
+    margin-top: 2rem;
+}
+.quote-area p.lead {
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.quote-area p.lead .fa {
+    font-size: 1.5rem;
+    margin: 0.25rem;
+    transform: translateY(-35%); 
+}
+.quote-area p.sub {
+    font-size: 1.2rem;
+}
+
+/*==== Portfolio ====*/
+#portfolio {
+    padding-top: 2rem;
+}
+
+ul.nav-pills li.nav-item {
+    margin-right: 5px;
+}
+
+ul.nav-pills .nav-link {
+    color: #1B1B1B;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: 2px solid #1B1B1B;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+ul.nav-pills .nav-link.active, ul.nav-pills .nav-link:active {
+    background: #1B1B1B!important;
+    color: #FFF;
+}
+
+#portfolio .portfolio-item {
+    right: 0;
+    margin: 0 0 15px;
+  }
+  
+#portfolio .portfolio-item  {
+    position: relative;
+    display: block;
+    margin: 0;
+    margin-bottom: 1.8rem;
+    cursor: pointer;
+  }
+
+#portfolio .portfolio-item img {
+    width: 100%;
+    margin: 0;
+  }
+  
+#portfolio .portfolio-item  .portfolio-overlay {
+    background: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    width: 92%;
+    height: 100%;
+    opacity: 0;
+    transition: all ease-in 0.5s;
+    -webkit-transition: all ease-in 0.5s;
+}
+
+#portfolio .portfolio-item .portfolio-overlay:hover {
+    opacity: 1;
+}
+
+#portfolio .portfolio-item .portfolio-overlay .portfolio-overlay-content {
+    font-size: 0.9rem;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    height: 20px;
+    margin-top: -20px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #FFF;
+}
+
+#portfolio .portfolio-item .portfolio-overlay .portfolio-overlay-content h4 {
+    font-family: "Montserrat";
+    font-size: 1rem; 
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+
+/*==== Testimonials ====*/
+#testimonial {
+    padding-top: 2rem;
+}
+.testimonial-box {
+    padding-left: 2rem;
+    position: relative;
+    margin: 0 15px 15px;
+    cursor: pointer;
+}
+.testimonial-img {
+    height: 120px;
+    width:120px;
+    position: absolute;
+    margin-top: 3rem;
+    margin-left: -1rem;
+}
+.testimonial-img img {
+    border: 4px solid #FFF;
+    border-radius: 50%;
+}
+.testimonial-text {
+    background: #1B1B1B;
+    color: #FFF;
+    padding: 2.5rem 1.2rem 2.5rem 6rem;
+    margin-left: 2rem;
+    transition: all ease-in 0.5s;
+    -webkit-transition: all ease-out 0.5s;
+}
+.testimonial-text .fa {
+    margin: 3px;
+}
+.testimonial-text h3 {
+    font-family: "Allura";
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+}
+.testimonial-text h3 span {
+    font-size: 20px;
+    display: block;
+}
+.testimonial-box:hover .testimonial-text {
+    background: #FFF;
+    color: #1B1B1B;
+    border: 1px solid #f9f9f9;
+    box-shadow: 5px 5px 2px #ccc;
+}
+#testimonial .owl-theme .owl-dots .owl-dot span {
+    height: 5px;
+    width: 20px;
+    background: #1B1B1B;
+    transition: all ease-in 0.5s;
+}
+#testimonial .owl-theme .owl-dots .owl-dot.active span {
+    width: 10px;
+}
+
+
+
+/*==== Contact ====*/
+#contact {
+    background: #1B1B1B;
+    color: #FFF;
+    padding: 3rem 4rem 4rem 4rem;
+    margin: 2rem 0 4rem 0;
+}
+#contact .heading h2::after {
+    background: #FFF;
+}
+#contact form .form-group .form-control {
+    background: transparent!important;
+    border: 0;
+    border-bottom: 1px solid #444;
+    color: #aaa;
+    font-size: 14px;
+}
+#contact form .form-group .form-control:focus{
+    box-shadow:0 0 0 .1rem rgba(175,175,175,.25);
+}
+
+
+/*==== Clients ====*/
+#clients {
+    margin-bottom: 4rem;
+}
+.client-img {
+    padding: 2rem;
+    border: 1px solid #eee;
+    margin: 1rem;
+    cursor: pointer;
+}
+.client-img img {
+    transition: all ease-in 0.5s;
+}
+.client-img:hover img {
+    transform: scale(1.5);
+}
+
+
+/*==== Footer ====*/
+footer {
+    background: #1B1B1B;
+    color: #ccc;
+    padding-top: 3rem;
+}
+footer a {
+    color: #ccc;
+}
+footer a:hover {
+    color: #ccc;
+    text-decoration: none;
+    border-bottom: 1px dotted;
+}
+.foot-connect {
+    font-size: 0.85rem;
+}
+.foot-connect .fa {
+    font-size: 1.2rem;
+    background: #FFF;
+    padding-top: 10px;
+    color: #1B1B1B;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+    transition: all ease-out 0.5s;
+}
+
+footer .copyright {
+    font-size: 0.9rem;
+    background: #080808;
+    padding: 3rem 0 2rem 0;
+}
+
+
+/*==== Media Queries ====*/
+
+/*
+@media (min-width:576px) {
+}
+
+@media (min-width:768px) {
+
+}
+
+@media (min-width:992px) {
+
+}   */
